@@ -1,0 +1,8 @@
+name: FortcraftAssistant
+main: DDRKhat.fortcraftassistant.FCmain
+version: 1.0
+authors: [DDRKhat]
+commands:
+    join:
+        description: Bleh!
+        usage: /join [team]
