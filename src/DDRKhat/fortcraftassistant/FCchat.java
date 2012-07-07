@@ -11,11 +11,14 @@ public class FCchat implements Listener
 	@EventHandler(priority = EventPriority.NORMAL)
 	public void onPlayerChat (PlayerChatEvent event)
 	{
-		event.getPlayer().sendMessage("You: " + event.getMessage());
-		if(event.getMessage().equalsIgnoreCase("brb"));
+		String OurGuy = ChatColor.AQUA+event.getPlayer().getName();
+		event.getPlayer().sendMessage("<"+OurGuy+"> "+event.getMessage());
+		/*
+		if(event.getMessage().equalsIgnoreCase("brb"))
 		{
 			event.getPlayer().sendMessage(ChatColor.AQUA + " You went auto AFK!");
 			//event.getPlayer().performCommand("afk");
 		}
+		*/
 	}
 }
